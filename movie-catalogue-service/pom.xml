@@ -6,7 +6,6 @@
 		<groupId>com.javabrains.microservices</groupId>
 		<artifactId>parent</artifactId>
 		<version>1.0.0</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<artifactId>movie-catalogue-service</artifactId>

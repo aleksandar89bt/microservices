@@ -22,13 +22,12 @@ public class MovieInfoController {
 
     @Value("${api.key}")
     private String apiKey;
+
     @Autowired
     private RestTemplate restTemplate;
 
     @GetMapping("{id}")
     public Movie getMovie(@PathVariable int id){
-        Movie movie = restTemplate.getForObject("https://api.themoviedb.org/3/movie/"+ id
-                +"?api_key=" + apiKey, Movie.class);
-        return movie;
+        return restTemplate.getForObject("https://api.themoviedb.org/3/movie/"+ id +"?api_key=" + apiKey, Movie.class);
     }
 }

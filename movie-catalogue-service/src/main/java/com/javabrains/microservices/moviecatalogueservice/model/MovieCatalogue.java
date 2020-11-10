@@ -63,4 +63,14 @@ public class MovieCatalogue {
     public void setRating(int rating) {
         this.rating = rating;
     }
+
+    @Override
+    public String toString() {
+        return "MovieCatalogue{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", rating=" + rating +
+                '}';
+    }
 }
